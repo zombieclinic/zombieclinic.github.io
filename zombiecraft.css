@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('fonts/F77MinecraftRegular-0VYv.ttf') format('truetype');
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    background-image: url('imgs/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'CustomFont', sans-serif;
+    background: linear-gradient(yellow 10%, green 75%);
+    -webkit-background-clip: text;
+    text-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.5);
+    color: transparent;
+    margin: 0;
+    font-size: 5rem;
+    transform: perspective(500px) rotateX(20deg);
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 3rem;
+    color: white;
+    font-style: unset;
+    font-family: 'CustomFont', sans-serif;
+    margin: 0;
+}
+
+#enterLink {
+    display: flex;
+    width: 27%;
+    height: auto;
+    max-width: 300px;
+}
+
+#enterLink img {
+    width: 100%;
+    height: auto;
+}
+
+.click:hover {
+    filter: hue-rotate(90deg);
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 3.5rem; /* Adjust font size */
+        transform: perspective(300px) rotateX(10deg); /* Adjust perspective and rotation */
+    }
+
+    h2 {
+        font-size: 2rem; /* Adjust font size */
+    }
+
+    #enterLink {
+        width: 50%; /* Adjust width */
+    }
+}
